@@ -290,33 +290,31 @@
     </section>
 <script>
 lucide.createIcons();
-window.addEventListener("resize", () => {
-    if(window.innerWidth <= 1024){
-        const dropdownParent = document.getElementById("dropdown-parent")
-        const dropdownToggle = document.getElementById("dropdown-toggle")
-        const dropdownToggleIcon = dropdownToggle.querySelector("svg")
-        const dropdown = document.getElementById("dropdown")
-        let initValue = dropdownToggle.clientHeight
-        let isOpen = false
-        dropdownParent.style.height = initValue + "px"
+if(window.innerWidth <= 1024){
+    const dropdownParent = document.getElementById("dropdown-parent")
+    const dropdownToggle = document.getElementById("dropdown-toggle")
+    const dropdownToggleIcon = dropdownToggle.querySelector("svg")
+    const dropdown = document.getElementById("dropdown")
+    let initValue = dropdownToggle.clientHeight
+    let isOpen = false
+    dropdownParent.style.height = initValue + "px"
 
-        dropdownToggle.addEventListener("click", (e) => {
-            e.stopPropagation();
+    dropdownToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
 
-            if(!isOpen){
-                isOpen = true
-                initValue += dropdown.clientHeight
-                dropdownParent.style.height = initValue + "px"
-                dropdownToggleIcon.style.transform = "rotateZ(180deg)"
-            }else{
-                isOpen = false
-                initValue -= dropdown.clientHeight
-                dropdownParent.style.height = initValue + "px"
-                dropdownToggleIcon.style.transform = "rotateZ(360deg)"
-            }
-        })
-    }
-})
+        if(!isOpen){
+            isOpen = true
+            initValue += dropdown.clientHeight
+            dropdownParent.style.height = initValue + "px"
+            dropdownToggleIcon.style.transform = "rotateZ(180deg)"
+        }else{
+            isOpen = false
+            initValue -= dropdown.clientHeight
+            dropdownParent.style.height = initValue + "px"
+            dropdownToggleIcon.style.transform = "rotateZ(360deg)"
+        }
+    })
+}
 
 
 const sliders = document.querySelectorAll("#slider")
