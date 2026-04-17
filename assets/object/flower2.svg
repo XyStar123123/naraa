@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" id="flower">
+  <rect width="200" height="200" fill="transparent" />
+
+  <g fill="#FFA1CC" transform="translate(100, 100)">
+    <ellipse cx="0" cy="-45" rx="20" ry="40" />
+    <ellipse cx="0" cy="-45" rx="20" ry="40" transform="rotate(72)" />
+    <ellipse cx="0" cy="-45" rx="20" ry="40" transform="rotate(144)" />
+    <ellipse cx="0" cy="-45" rx="20" ry="40" transform="rotate(216)" />
+    <ellipse cx="0" cy="-45" rx="20" ry="40" transform="rotate(288)" />
+    <ellipse cx="0" cy="-45" rx="20" ry="40" transform="rotate(360)" />
+  </g>
+
+  <circle cx="100" cy="100" r="22" fill="#FFFFFF" />
+</svg>

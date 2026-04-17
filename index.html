@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@latest/font/simple-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .carousel{
+            animation: carousel 20s linear infinite;
+        }
+
+        @keyframes carousel {
+            from {
+                transform: translateX(0);
+            } to {
+                transform: translateX(calc(-50%));
+            }
+        }
+    </style>
+</head>
+<body class="font-['Poppins'] text-white font-semibold">
+    <header class="">
+        <div class="px-6 py-2 bg-[#FE9BC7] flex flex-col-reverse lg:flex-row items-center justify-between">
+            <div class="flex items-center gap-4">
+                <i class="si si-facebook text-white"></i>
+                <i class="si si-tiktok text-white"></i>
+                <i class="si si-instagram text-white"></i>
+            </div>
+            <p class="text-center">WELCOME TO FARAH'S LITTLE WORLD</p>
+            <div class="h-full opacity-0 hidden lg:block">PLACEHOLDER</div>
+        </div>
+        <div class="flex w-full items-center justify-center px-5 py-2.5">
+            <img src="assets/object/logo.png" alt="" class="w-40">
+        </div>
+        <nav class="bg-[#DCDDF9] lg:py-2 lg:px-4 flex flex-col overflow-hidden lg:flex-row lg:items-center lg:justify-center lg:gap-6 transition-all duration-500" id="dropdown-parent">
+            <button class="w-full px-4 py-2 flex items-center justify-center shrink-0 lg:hidden" id="dropdown-toggle">
+                <i data-lucide="chevron-down" class="transition-all duration-300 text-[#9393DE] shrink-0"></i>
+            </button>
+            <div class="flex flex-col items-center w-full lg:hidden" id="dropdown">
+                <a href="#home" class="text-nowrap px-4 py-2 w-full hover:bg-[#9f9fe0] bg-[#9393DE] text-sm text-white text-center">HOME</a>
+                <a href="#about-me" class="text-nowrap px-4 py-2 w-full text-center rounded-md text-[#9393DE] hover:bg-[#9393DE40] transition-all duration-100 text-sm">ABOUT ME</a>
+                <a href="#designs" class="text-nowrap px-4 py-2 w-full text-center rounded-md text-[#9393DE] hover:bg-[#9393DE40] transition-all duration-100 text-sm">DESIGNS</a>
+                <a href="#contact_me" class="text-nowrap px-4 py-2 w-full text-center rounded-md text-[#9393DE] hover:bg-[#9393DE40] transition-all duration-100 text-sm">CONTACT</a>
+            </div>
+            <a href="" class="hidden lg:inline text-nowrap px-4 py-2 rounded-md hover:bg-[#9f9fe0] bg-[#9393DE] text-sm text-white">HOME</a>
+            <a href="" class="hidden lg:inline text-nowrap px-4 py-2 rounded-md text-[#9393DE] hover:bg-[#9393DE40] transition-all duration-100 text-sm">ABOUT ME</a>
+            <a href="" class="hidden lg:inline text-nowrap px-4 py-2 rounded-md text-[#9393DE] hover:bg-[#9393DE40] transition-all duration-100 text-sm">DESIGNS</a>
+            <a href="" class="hidden lg:inline text-nowrap px-4 py-2 rounded-md text-[#9393DE] hover:bg-[#9393DE40] transition-all duration-100 text-sm">CONTACT</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="flex flex-col items-center justify-center bg-[#FFF6F5] relative p-20 overflow-hidden">
+            <svg width="100%" height="40" xmlns="http://www.w3.org/2000/svg" class="absolute top-0">
+                <defs>
+                    <pattern id="wave-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M0,0 H40 V10 A10,10 0 0 1 0,10 Z" fill="#FCE4EC" />
+                    </pattern>
+                </defs>
+                
+                <rect y="0" width="100%" height="40" fill="url(#wave-pattern)" />
+            </svg>
+            <div class="flex flex-col gap-3 items-center justify-center">
+                <img src="assets/object/accent3.png" alt="" class="w-50">
+                <div class="relative">
+                    <p class="text-[#FFE1EF] absolute top-0 font-['DynaPuff'] text-center text-4xl ">Your Imagination <br>to Reality</p>
+                    <p class="text-[#F6ADCC] relative font-['DynaPuff'] text-center text-4xl bottom-1 right-1">Your Imagination <br>to Reality</p>
+                </div>
+                <p class="text-3xl text-center text-black font-['Great_Vibes']">Mascot, Logo, and More</p>
+                <a href="" class="bg-[#FFACD1] px-8 py-2 rounded-md">ORDER NOW</a>
+            </div>
+            <div class="hidden lg:block absolute bg-white shadow-md p-4 h-75 w-55 left-30 top-15 -rotate-z-10">
+                <div class="w-full h-[calc(100%-75px)] bg-[url('./assets/arts/pp_1.jpeg')] bg-center bg-no-repeat bg-cover"></div>
+            </div>
+            <div class="hidden lg:block absolute bg-white shadow-md p-4 h-75 w-55 right-30 bottom-15 rotate-z-10">
+                <div class="w-full h-[calc(100%-75px)] bg-[url('./assets/arts/pp_2.jpeg')] bg-center bg-no-repeat bg-cover"></div>
+            </div>
+            <div class="flex mt-10 justify-between lg:hidden lg:mt-0 w-full">
+                <div class="relative bg-white shadow-md p-4 h-75 w-1/2 -rotate-z-10 bottom-5 shrink-0">
+                    <div class="w-full h-[calc(100%-75px)] bg-[url('./assets/arts/pp_1.jpeg')] bg-center bg-no-repeat bg-cover"></div>
+                </div>
+                <div class="relative bg-white shadow-md p-4 h-75 w-1/2 rotate-z-10 top-5 shrink-0">
+                    <div class="w-full h-[calc(100%-75px)] bg-[url('./assets/arts/pp_2.jpeg')] bg-center bg-no-repeat bg-cover"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <section class="bg-[#FEDEEC] flex flex-col items-center justify-center gap-4 p-8 pb-14 relative z-2" id="about-me">
+            <h1 class="font-bold text-xl text-black">Farah's Little World</h1>
+            <p class="text-black text-wrap font-normal lg:w-200 text-center">
+            <span class="font-semibold">Every line I draw holds a story</span> I couldn't say out loud. 
+            Welcome to my world, where colors and feelings quietly exist, 
+            <span class="font-semibold">transforming abstract emotions</span> into tangible visual narratives. 
+            Each stroke is a <span class="font-semibold">deliberate choice</span>, ensuring no canvas is ever empty. 
+            By merging deep sentiment with <span class="font-semibold">high-quality illustration</span>, 
+            I bridge the gap between artistic vulnerability and <span class="font-semibold">professional excellence</span>.
+            </p>
+            <a href="" class="bg-[#FF8EC3] px-4 py-2 rounded-md bg-[#]">GET TO KNOW ME</a>
+            <span class="p-2 bg-[#f1eeee] text-black absolute text-xl font-['Great_Vibes'] -bottom-5">My <span class="text-[#F6ADCC]"> Artworks</span></span>
+        </section>
+        <section class="bg-white p-8 md:p-12 relative" id="designs">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                    
+                    <div class="md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <img src="assets/arts/A Sky full of Wishes_20251217174835.png" alt="Sky full of wishes" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="md:row-span-2 rounded-2xl overflow-hidden shadow-sm">
+                        <img src="assets/arts/IMG_20260102_173133_934.webp" alt="Hijab character" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="rounded-2xl overflow-hidden shadow-sm">
+                        <img src="assets/arts/Rasa Nusantara.png" alt="Indonesian Food Art" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="md:row-span-2 rounded-2xl overflow-hidden shadow-sm">
+                        <img src="assets/arts/IMG-20260206-WA0075.jpg.jpeg" alt="Butterfly Universe" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="md:col-span-2 rounded-2xl overflow-hidden shadow-sm">
+                        <img src="assets/arts/IMG-20250922-WA0144.jpg.jpeg" alt="Cat in moonlight" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="md:row-span-2 rounded-2xl overflow-hidden shadow-sm">
+                        <img src="assets/arts/IMG-20260126-WA0068.jpg.jpeg" alt="Universe Love Heart" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="md:col-span-2 rounded-2xl overflow-hidden shadow-sm">
+                        <img src="assets/arts/Wallpaper.png" alt="Farah's World Collage" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="rounded-2xl overflow-hidden shadow-sm">
+                        <img src="assets/arts/IMG-20260124-WA0067.jpg.jpeg" alt="Nad's Diary" class="w-full h-full object-cover">
+                    </div>
+
+                </div>
+            </div>
+            <svg width="100%" height="40" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 left-0">
+                <defs>
+                    <pattern id="bubbly-wave" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M0,40 L0,20 Q20,-5 40,20 L40,40 Z" fill="#FEDEEC" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="40" fill="url(#bubbly-wave)" />
+            </svg>
+        </section>
+    </section>
+    <div class="bg-[#FECBDE] h-2"></div>
+    <section class="flex flex-col items-center justify-center bg-[#D1D2F1] p-8">
+        <p class="text-4xl text-center">
+            <span class="font-['Great_Vibes'] text-[#9C9ED4]">Explore the Gallery</span>
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center items-center w-full">
+            <div class="relative w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="300" height="300">
+                <g fill="#FFDFEF" transform="translate(100, 100)">
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(45)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(90)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(135)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(180)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(225)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(270)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(315)" />
+                </g>
+                </svg>
+                <p class="flex flex-col justify-center  absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-xl leading-[.5] text-center">
+                    <span class="text-[#F1B0CA] font-['DynaPuff'] text-2xl">Latest</span>
+                    <span class="font-['Great_Vibes']">Pieces</span>
+                </p>
+            </div>
+            <div class="relative w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="300" height="300">
+                <g fill="#FFE7E3" transform="translate(100, 100)">
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(45)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(90)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(135)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(180)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(225)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(270)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(315)" />
+                </g>
+                </svg>
+                <p class="flex flex-col justify-center  absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-xl leading-[.5] text-center">
+                    <span class="text-[#F8BCB3] font-['DynaPuff'] text-2xl">Featured</span>
+                    <span class="font-['Great_Vibes']">Works</span>
+                </p>
+            </div>
+            <div class="relative w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="300" height="300">
+                <g fill="#FBC7D4" transform="translate(100, 100)">
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(45)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(90)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(135)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(180)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(225)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(270)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(315)" />
+                </g>
+                </svg>
+                <p class="flex flex-col justify-center  absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-xl leading-[.5] text-center">
+                    <span class="text-[#FD98B3] font-['DynaPuff'] text-2xl">Creative</span>
+                    <span class="font-['Great_Vibes']">Studies</span>
+                </p>
+            </div>
+            <div class="relative w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="300" height="300">
+                <g fill="#BCBCED" transform="translate(100, 100)">
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(45)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(90)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(135)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(180)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(225)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(270)" />
+                    <ellipse cx="0" cy="-30" rx="27" ry="40" transform="rotate(315)" />
+                </g>
+                </svg>
+                <p class="flex flex-col justify-center  absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-xl leading-[.5] text-center">
+                    <span class="text-[#8B8BD8] font-['DynaPuff'] text-2xl">Commissions</span>
+                    <span class="font-['Great_Vibes']">Fee</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="bg-[#FFC3DE] py-2 overflow-hidden text-white font-bold w-full" id="contact_me">
+        <div class="carousel w-max flex items-center whitespace-nowrap">
+
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">CREATION</p>
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">INVENTION</p>
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">INNOVATION</p>
+
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">CREATION</p>
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">INVENTION</p>
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">INNOVATION</p>
+
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">CREATION</p>
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">INVENTION</p>
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">INNOVATION</p>
+
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">CREATION</p>
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">INVENTION</p>
+            <div class="shrink-0 h-3 w-3 rounded-full bg-white me-10"></div>
+            <p class="me-10">INNOVATION</p>
+            
+            
+        </div>
+    </div>
+    <section class="bg-[#FFFFFF] p-8 pb-14 flex flex-col-reverse gap-5 lg:flex-row justify-center lg:justify-between lg:items-center lg:gap-0">
+        <div class="flex flex-col items-center justify-center gap-4">
+            <h1 class="font-bold text-2xl text-black tracking-tight">Beyond the Line</h1>
+            <p class="text-black text-wrap font-normal lg:w-[700px] text-center leading-relaxed">
+                A collection of moments, <span class="font-semibold">captured one stroke at a time</span>. 
+                I don’t just create images; I document <span class="font-semibold">stories that are often felt</span> but rarely spoken. 
+                Through a blend of <span class="font-semibold">creative exploration</span> and professional dedication, 
+                I turn quiet emotions into bold, <span class="font-semibold">visual experiences</span> that resonate.
+            </p>
+            <a href="" class="bg-[#F8B0D0] text-white px-4 py-2 rounded-md">CONTACT ME</a>
+        </div>
+        <div class="bg-white p-4 shadow-md">
+            <img src="assets/slider/WhatsApp Image 2026-04-17 at 06.06.13.jpeg" alt="" class="block lg:h-100" id="slider">
+            <img src="assets/slider/WhatsApp Image 2026-04-17 at 06.06.15.jpeg" alt="" class="hidden lg:h-100" id="slider">
+            <img src="assets/slider/WhatsApp Image 2026-04-17 at 06.12.13.jpeg" alt="" class="hidden lg:h-100" id="slider">
+            <div id="dot-slider" class="w-full flex items-center justify-center gap-3 mt-3">
+            </div>
+        </div>
+    </section>
+<script>
+lucide.createIcons();
+window.addEventListener("resize", () => {
+    if(window.innerWidth <= 1024){
+        const dropdownParent = document.getElementById("dropdown-parent")
+        const dropdownToggle = document.getElementById("dropdown-toggle")
+        const dropdownToggleIcon = dropdownToggle.querySelector("svg")
+        const dropdown = document.getElementById("dropdown")
+        let initValue = dropdownToggle.clientHeight
+        let isOpen = false
+        dropdownParent.style.height = initValue + "px"
+
+        dropdownToggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+
+            if(!isOpen){
+                isOpen = true
+                initValue += dropdown.clientHeight
+                dropdownParent.style.height = initValue + "px"
+                dropdownToggleIcon.style.transform = "rotateZ(180deg)"
+            }else{
+                isOpen = false
+                initValue -= dropdown.clientHeight
+                dropdownParent.style.height = initValue + "px"
+                dropdownToggleIcon.style.transform = "rotateZ(360deg)"
+            }
+        })
+    }
+})
+
+
+const sliders = document.querySelectorAll("#slider")
+const dotSlider = document.getElementById("dot-slider")
+const array = Array.from(sliders)
+let tracker = 0
+
+
+for(let i = 0; i<array.length; i++){
+    const dot = document.createElement("div")
+    dot.classList.add("h-3", "w-3", "rounded-full", "bg-[#F8B0D0]")
+    dot.id = "dot"
+    dotSlider.appendChild(dot)
+}
+
+const dots = document.querySelectorAll("#dot")
+const dotsArray = Array.from(dots)
+
+dotsArray[0].classList.add("bg-[#C78DA6]")
+dotsArray[0].classList.remove("bg-[#F8B0D0]")
+
+
+setInterval(() => {
+    array[tracker].classList.remove("block")
+    array[tracker].classList.add("hidden")
+
+    dotsArray[tracker].classList.remove("bg-[#C78DA6]")
+    dotsArray[tracker].classList.add("bg-[#F8B0D0]")
+    
+    tracker++
+    if(tracker >= array.length){
+        tracker = 0
+    }
+
+    array[tracker].classList.remove("hidden")
+    array[tracker].classList.add("block")
+
+    dotsArray[tracker].classList.add("bg-[#C78DA6]")
+    dotsArray[tracker].classList.remove("bg-[#F8B0D0]")
+}, 1000)
+</script>
+</body>
+</html>
